@@ -1,0 +1,113 @@
+1->Purpose of map method in javascript 
+    The map() method in JavaScript is used to create a new array by applying a specified function to each element in
+    an existing array
+    
+    eg : const numbers = [1, 2, 3, 4, 5];
+        const double = numbers.map(rum => num * 2);
+        console.log(numbers); [1,2,3,4,5]
+        console.log(double); [2,4,6,8,10]
+
+Original array is not altered....
+
+2->What is event bubbling and Event capturing 
+    Event capturing : Top down approach 
+        -> Event capturing means the event starts from the top-level element and travels down to the element that was clicked.
+        -> Events are handled from outermost to innermost 
+                        HTML
+                        ↓
+                        BODY
+                        ↓
+                        DIV
+                        ↓
+                        BUTTON ← Clicked
+
+
+    Event bubbling : Bottom up approach 
+        -> Event bubbling : event starts from element that was clickd then moves upward to its parent elements 
+        -> Events are handled from innermost to outermost 
+        eg : addEventListener() uses event bubbling. 
+        
+3->What are higher order function : 
+    -> Functions which can accept another funciton as argument and can return a function 
+    eg : map function 
+
+4-> What are IIFE(Immediately Invoked Function Expression )
+    :function that is defined and executed immediately after it's created 
+    :we dont have to call function it auto executes when code is return
+    :no name is required to be given 
+    :mainly used to create a private scope and avoid unnecessary global variables.Variables created inside an IIFE cannot normally be accessed from outside.
+
+    eg : (function () {
+                    console.log("Hello World");
+                })();
+
+5-> What is Closure in js 
+    : A closure is created when an inner function remembers and can access variables from its outer function even after the outer function has finished executing.
+    : Closure = Function + its remembered outer variables 
+    eg: 
+                    function outer() {
+                        let count = 0;
+
+                        function inner() {
+                            count++;
+                            console.log(count);
+                        }
+
+                        return inner;
+                    }
+
+                    const counter = outer();
+
+                    counter(); // 1
+                    counter(); // 2
+                    counter(); // 3
+
+6-> :How setTimeout and setInterval work?
+    :Both used to run code after sometime 
+    -> setTimeout : 
+        ->run a function ...after a specified amount of time 
+          : setTimeout() does not stop the entire JavaScript program for t seconds. It schedules the function to run later.
+
+    -> setInterval() 
+     -> runs a function repeatedly after every specified interval of time.
+     -> runs until we dont stop it or stopping condition
+
+7-> Explain concept of Promises in JS 
+    : Promises : Handles asynchronous tasks in js 
+            -> Pending : waiting   : the operation is still running 
+            -> Fulfilled  : Operation was succesfull 
+            -> Rejected : Something went wrong 
+
+                 const promise = new Promise((resolve, reject) => {
+
+                            let success = true;
+
+                            if (success) {
+                                resolve("Data received successfully");
+                            } else {
+                                reject("Failed to get data");
+                            }
+
+                        });
+
+                -> After creating a Promise, we normally handle its result using:
+                    .then() → handles success
+                    .catch() → handles failure
+
+                promise
+                    .then((result) => {
+                        console.log(result);
+                    })
+                    .catch((error) => {
+                        console.log( error);
+                    });
+
+8-> What is async and await 
+   async : Declaring a funciton with async makes it return a promise 
+   await : It pauses the execution of code until promise its waiting for is resolved,then return result 
+
+9-> What is event deligation 
+    ->Event Delegation is a technique where we attach one event listener to a parent element instead of adding separate event listeners to each child element.
+    The parent handles events coming from its children using event bubbling.
+    : Event Delegation = Put one event listener on the parent and let it handle events from its children. 
+    : Advantages : Improves perf,Handles dynamic element

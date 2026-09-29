@@ -1,0 +1,45 @@
+1-> What is js 
+    JS is a high level programming language commonly used in web dev 
+
+2-> What are template literals in Javascript 
+    Template literals are a way to create strings easily in JavaScript using backticks ( ) instead of quotes (' ' or " ").
+    They allow us to insert variables directly inside a string using ${}.
+
+    eg :let name = "Shivesh";
+        let age = 21;
+        let message = `My name is ${name} and I am ${age} years old.`;
+
+3-> What is hoisting 
+    Hoisting is JavaScript's behavior where variable and function declarations are processed before the code is executed.
+    
+                Keyword	     Hoisted?	   Access before declaration
+                    var	        Yes	        undefined
+                    let	        Yes 	    ❌Error
+                    const	    Yes	        ❌Error
+        Function declaration	Yes	        ✅Can be called
+
+    They are of 2 types : variable and function hoisting
+
+4-> Diff b/w let var const 
+    let and const have block scope  : refernce error 
+    var has funciton scope : preffered less due to access 
+    const prevent reassignment 
+
+5-> Data types are primitive(immutable) and non primitive(mutable)
+    primitive : number,string,boolean,undefined(var declared but not initialized ),null,Symbol,Bigint
+    non primitive : object ,array, function 
+
+6-> difference b/w == and === 
+    == : equality operator  : performs type converison  (coersion) : var should be of equal value may or may not be of same data type 
+    ===: strict equality : var should be of same data type and of equal value
+
+7-> diff bw null and undefined : both represent absence of value 
+    undefined : var decalred but not intialized then defult val to var is undefined
+    null : intentional absence of any value ..when we dont want to assign any value then we use null value can be assigned later 
+
+8-> use of typeof : 
+    give data type  
+
+9->Js is single or multithreaded and what does it means 
+ : JS is single threaded means...js has one main thread that executes js code one task at a time
+ :JavaScript is a single-threaded language, meaning it has one main thread for executing JavaScript code. It executes one piece of code at a time. However, asynchronous operations are handled by the runtime using mechanisms such as Web APIs, the event loop, and background threads, allowing JavaScript to remain responsive.

@@ -1,0 +1,41 @@
+1 :npm init -y  : to initalize server
+2: npm i express mongoose dotenv
+3 : make folder src -> under that app.js
+4 : make file server.js to start server
+5 : make folder config under src folder : purpose of config is to connect to database 
+6 : under config make file database.js to connect to database 
+7 : make folder models under src : make file user.models.js : to make how database will look like 
+8 : make folder routes inside src : to make api's ...make file auth.js
+9 : make folder controllers inside src :make file auth.controllers.js 
+10 : npm i bcryptjs jsonwebtoken cookie-parser...for hashing etc 
+11 : generate jwt secret key from jwtsecretkey.com
+12 : Study token blacklisting on how to log out ..what are realted problems and how token blacklisting solves it...we use radish for tokenblacklisting while in production  
+13: go to models folder inside src...make file blacklist.model.js
+14: go to mogodbcompass local system : create new connection : paste mongodb+srv://shiveshyadav020_db_user:hUx4Kvc23odNofTH@interview-ai-cluster.86foxwi.mongodb.net/
+then create connnection and save 
+15:create a middleware to identify which user has sent request and token is blacklisted or not  
+16:create api getme: it will give the details of requested user 
+17: make folder middleware : under that make file  auth.middleware.js
+18:npm i cors : to solve the CORS problem
+
+
+19:go to model folder make file :interviewReport.model.js : to make schema how data will be stored as response of ai...i.e:report will be saved ..how its structure 
+
+20:make folder services : task related to ai model : make file ai.service.js
+21 : npm install @google/genai
+22: go to google ai studio to get google api key 
+23 : npm i zod : to get structured output from llm models 
+24:npm i zod-to-json-schema
+
+
+//to create api's for ai 
+
+25: make file interview.routes.js inside routes folder 
+26: make file interview.controller.js inside controller folder
+
+27:to read pdf npm i pdf-parse
+28:npm i multer 
+
+29:make file file.middleware.js inside middleware folder 
+
+30 : npm i puppeteer ; puppeteer helps to generate pdfs are response ...ai will generate html file..puppeteer will convert htlm file into pdf and will return 

@@ -1,0 +1,24 @@
+1:What is node? 
+    -> node.js is  a runtime environment that allows us to run js code
+        outside the browser,mainly on the server 
+        
+2:Explain asynchronous and non-blocking programming 
+    ->asynchronous programming : allows your code to start a task and move on to next one without waiting for previous task to finish
+    ->Non-blocking programming means one operation does not stop or block the execution of other operations while it is waiting for a result.
+
+3:What is event loop 
+    ->mechanism in js that continuously checks whether the main thread is free and,
+    if it is , moves waiting asynchronous tasks to the main thread for execution
+    ->Event loop : manager that decides when waiting tasks should be executed 
+
+4:What is middleware ?
+    ->Middleware is a function that runs between the incoming request and the final response in a web application.
+
+
+5:How does node.js handle child threads?
+    ->Node.js runs JavaScript mainly on a single main thread, but it can use additional threads for CPU-intensive work through mechanisms such as Worker Threads.
+    ->Main thread handles normal work; Worker Threads handle heavy CPU work; Child Processes run separate processes.
+    ->Node.js handles child threads by using worker threads for paraller processing and child processes for creating independent processes.
+
+6:What are streams in node.js?
+    ->
