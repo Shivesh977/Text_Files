@@ -1,0 +1,47 @@
+
+################################################## Skills ####################################################
+######### React.js
+->Js library used to build interactive and reusable user interface (UI),especially for web applications
+->React helps us with : reusable components,updating ui effeciently , connecting frontend with backend/apis 
+
+        User
+        ↓
+        Interacts with UI
+        ↓
+        State changes
+        ↓
+        React detects change
+        ↓
+        React updates required UI
+        ↓
+        Browser displays updated UI
+
+->Components : reusable piece of ui that contains its own structure and logic
+->JSX(JavaScript XML) : is a syntax that allows to write html like code inside js 
+->State is data maintained by a component that can change over time and cause the UI to update.
+->frontend and backend talk to each other\
+ via axios (js library)
+
+####### Scikit-learn: is python machine learning library used to build,train
+evaluate and use traditional ml models: used for classification,regression,clustering
+->classification:Logistic regression,random forest,SVM,KNN
+->Regression:Linear regression
+->clustering : k-Means
+
+####### Tensorflow : is an open-source machine learning and deep learning framework used to build and train neural networks
+eg  : ANN,cnn,cv,nlp 
+
+
+####### Hugging face : ai platform and ecosystem that provides pretrained models,datasets,libraries and tools for machine learning and especially NLP and Gen ai 
+->pretrained models such as : BERT,GPT,LLAMA-family models
+->we can use pretrained model and fine tuning for our task 
+->tools such as : Transformers , Tokenizers etc 
+
+####### Langchain : framework used for building applications powered by llms 
+->helps u to connect an llm with : prompts,documents,vector database  etc 
+->commonly used for rag applications 
+
+
+
+
+
