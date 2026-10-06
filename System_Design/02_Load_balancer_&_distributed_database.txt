@@ -1,0 +1,56 @@
+->Load balancer  :A load balancer sits between clients and a group of servers. 
+        It spreads incoming reques ts across those servers so no single server gets overloaded.
+
+->How it chooses a server  :
+    ->Applies routing algo 
+        1:Round robin : take turns sending requests to each server 
+        2:Least connections : choose server with fewest active requests 
+        3:Ip hash:use clients ip address to keep it routed to the same server 
+
+            Request arrives
+                ↓
+            Choose a healthy server using routing rule
+                ↓
+            Forward request → Server
+                ↓
+            Return response → Client
+        4:Least time algo :Based on average response time by server  : in real time application mostly used ..where no latency is needed 
+
+Healt Checks : 
+                Load balancer → “Are you healthy?”
+                                    ↓
+                            Server responds?
+                            ↙          ↘
+                            Yes           No
+                            ↓             ↓
+                    Keep in rotation   Stop sending traffic
+
+
+
+############### Distributed Database 
+--->Replication : we have multiple copy of database 
+    ->adv : NO SPOF,Availability,increase  read throughput as we have multiple same database 
+    --> How can we achieve replication 
+
+        1:Single Leader Replication : from one database  we replicate 
+                --> user send request , goes to leader node(database) ..then leader sends to follower nodes (replicated db) 
+            : if leader fails how to choose next leader :-> the follower which is updated to the latest is choosen as the new leader 
+
+        2:Multi leader replication : all dataserver has its own leader and followers ..if update req is sent to leader of DS1 then it will update its follower leaders and other DS2 leader as well which will further update its followers 
+        3:Leaderless replication
+
+
+disadv : when data is soo huge ..time for search is more 
+
+
+--->Partition:we  divide db into various parts ..and then can replicate it 
+        ->dats should be evenly distrubed 
+
+        -->Partition rule
+            1:Partition by 'key ' eg : from user 1 -50 in db1 ..51-100 in db2 
+                ->we dont want any node to be hotspot(getting more request )
+
+            2:Partition with 'hash' of key 
+
+            3:Partition by secondary index 
+            4:By having common global index 

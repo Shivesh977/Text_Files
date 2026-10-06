@@ -1,0 +1,33 @@
+1: Under body tag we write website content 
+
+
+2:h1 tag for heading   : from h1 to h6
+
+3:For paragraph : p tag 
+ 
+4:br tag is used for line break  : opening tag 
+
+5 : hr : for horizontal row   :opening tag 
+
+6:l : list tag 
+    ol :for ordered list  : we have numbering 
+        ->li : list item 
+
+    ul : unordered list   :we dont have numbering 
+       
+7:image tag : img  : only opening tag not a closing 
+    -><img  src="" alt=""> : here src is source of image
+     -> if img doesnt work or any error what to show as message we write in alt 
+
+
+8: a : anchor tag : used to make hyperlinks in website 
+     :<a href="">shivesh</a>  : whenever we click of shivesh i will be redirected to href link 
+
+
+
+9:How to make form : <form> </form>
+    : Enter name - <input type="text"> : to ask for input from user
+
+
+10:div : used to create division ..to create layout  : used as a container
+    

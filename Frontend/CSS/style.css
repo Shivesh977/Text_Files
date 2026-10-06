@@ -1,0 +1,33 @@
+h1{
+    color:red ;
+    background-color: black;
+
+}
+
+h2{
+    color:blue;
+}
+
+h3{
+    color :pink;
+    background-color: black;
+    font-size:50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-width: 400;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+
+#a{
+    background-color: aquamarine;
+}
+
+.b{
+    background-color: brown;
+}
+
+button:hover{
+    background-color: bisque;
+    color:blue
+}

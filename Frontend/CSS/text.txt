@@ -1,0 +1,62 @@
+1:Linking html with css 
+    ->    <link rel="stylesheet" href="style.css"> 
+
+2:General syntax : 
+
+    1:selector{
+        property : value ;
+    }
+                    eg  p{ // select all <p> element
+                        color:red;
+                        font-size:20px ;
+                    }
+
+    2:want to modify class 
+        .class_name{
+            property:value ;
+        }
+    3:want to modify id 
+        #id{
+            property:value;
+        }
+
+########## css properties 
+1:font-size : 50px;
+2:font-family:    # font dikhega kaisa 
+3:font-weight : 100 ; # font kitna ptla y mota hai 
+4:font-style :  italic  ; # bold italic 
+5:text-align : center;    # left,right,centre alignmnt
+6:margin-left : 50px : left se 50 px move ho jaega 
+7:padding-left : 20px : moves elemnt inside box by 20px
+8:border:2px solid red;
+9:border-radius :5px   makes border curved
+10:button:hover { # do this when mouse is hovered over button
+    property:value ; 
+}
+11:position : absolute; # box/div ko hva me uda do : its position is independent on others
+   left : 50px # move left by 50 px 
+
+#########
+1:whatever we write inside div tag ; any css property on that div will be applicable to all : div acts as a container 
+
+2:Padding used to move elements inside box/div 
+3:margin is used to move box/div
+
+########Display flex : used to arrange html elements in row or a column
+->mainly used for layout and alignment
+->given to parent element
+
+->eg :          <div class="container">
+                <div>Box 1</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+                </div>
+
+            .container {
+                display: flex;
+                flex-direction:row/column;
+            }
+
+            output   :  ┌───────┐  ┌───────┐  ┌───────┐
+                        │ Box 1 │  │ Box 2 │  │ Box 3 │
+                        └───────┘  └───────┘  └───────┘

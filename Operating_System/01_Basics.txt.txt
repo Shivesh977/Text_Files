@@ -1,0 +1,26 @@
+->What is os : is a system software that acts as a bridge b/w user/application and computer hardware and manages computere resources 
+
+->Need of os : hardware access,resources management,memory management , security and protection 
+
+->Goals of os : Maximizing cpu utilization,less process starvation,Higher priority task should
+
+-> Types of os : Single os , Batch os , Multiprogramming os , multitasking os , distributed os , real time os 
+
+->Multiprogramming : cpu does another progrm / process while current one is waiting for i/o 
+->multitasking : cpu switches b/w multiple tasks
+
+->Program : executable file containing set of instructions 
+
+->process : program currently executing in ram 
+
+->Thread : smallest part of process under execution 
+
+#### Components of os  : 
+    1:Kernel : directly interacts with hardware and performs import os operations 
+        ->Main funtions : process management,memory management,file management
+        ->Types : Monolithic : Most os func inside kernel
+                :Microkernel  : only essential features in kernel(Process and memory management)   other are in user space 
+
+            
+
+--> System calls : a mechanism trough which user programs requests a service from kernel 

@@ -1,0 +1,32 @@
+->Cache : 
+
+
+
+##### Terms in cache 
+1:Cache hit : memory/data for what we are looking for is present in cache 
+2:Cache miss : data not present in cache
+3:Time to live(TTL) : Amount of time for which data will be stored in cache 
+
+##### How do we store data in cache ? 
+Ans: In key value pair,along with TTL
+
+
+##### Strategies through we update the cache data 
+
+1:Read though cache (RTC) :  In this we can only read data from cache...
+    ->for write we access database....read in cache(if cache hit) , write in db  : faster 
+    ->case 2  : cache miss: cache asks db.. and fetchs that data  and returns to user : slower
+
+2:WTC — Write-to-Cache:
+    a write updates the cache. What happens next depends on the policy:- 
+    Write-through: update the cache and backing store together.
+    Write-back: update the cache first, then write to the backing store later.
+
+3:Write Back Cache : 
+    ->write ----> cache ----> db   :async process 
+
+####### Strategies for deleting data from cache 
+1:LRU(Least Recent Used)
+2:MRU(Most Recent Used)  : if chances of going back is very low ..we delete...eg utube streaming chances of going backward in video is less so we delete that 
+3:LFU(Least Frequenty Used):Data least frequently used is removed 
+4:FIFO
