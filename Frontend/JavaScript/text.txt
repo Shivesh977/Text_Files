@@ -1,0 +1,87 @@
+1:console.log("Hii") :To display any text etc 
+2:console.warn("This is a warning") : to give any warning 
+3:console.error("This is eror") : to give error 
+4:alert("Hello") : pop up alert on window 
+
+#### Loop 
+    for (var a =0 ;a<5;a++){
+        console.log("Hii")
+    }
+
+##### writing functions 
+1:
+    function hey(a){
+        console.log("Good morning",a)
+    }
+
+2: 
+    var abc=()=>{
+        console.log("Good morning")
+    }
+
+    abc() # function calling 
+
+3:
+
+    var abc=function(){
+        console.log("Good morning")
+    }
+
+    abc() # function calling 
+
+######### array
+var a =[1,23,4,5]
+console.log(a[0])
+a.push(6) # now a=[1,23,4,5,6]
+a.pop() # removes last index  element 
+
+a.length # to find length of array 
+
+########## objects 
+var obj={
+    user:'Harsh',
+    age:20
+}
+
+console.log(obj) # prints whole object 
+console.log(obj.user)  # to print value of user ...we extract value of property using dot('.')
+
+
+var user={ # object having function inside it 
+    userName:'Shivesh',
+    age:69,
+    greet:function(){
+        console.log("Good morning")
+    }
+}
+
+console.log(user.greet()) # gives Good morning  
+
+
+######### DOM :Document object model : is a way js represent html webpage so that js can access and change its elements
+->Four pillar of dom 
+  ->1:Selection of an element 
+  ->2:Changing HTML 
+  ->3:Changing css
+  ->4:Event Listner 
+
+### Selection of an element
+var h1 =documnet.querySelector('hi') # This selects the first <h1> element.
+var idd = documnet.querySelector(#id_name) # for id
+var clsss=documnet.querySelector(.class_name) # for  class 
+
+### Changing of html
+
+var a = documnet.querySelector('h1')
+a.innerHTML="change"    # to change innerhtml 
+
+### Changing css 
+a.style.color='black' # to change css a.style.property 
+
+###Event listner 
+var h1=documnet.querySelector('h1')
+
+h1.addEventListner('click',function(){  # h1 pe add event listner lgaya hai..jb h1 pe click krenge to  function chlega 
+    h1.innerHTML="changed"
+    h1.style.color='black'
+})

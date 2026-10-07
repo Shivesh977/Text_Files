@@ -1,5 +1,5 @@
 1:Linking html with css 
-    ->    <link rel="stylesheet" href="style.css"> 
+    -> <link rel="stylesheet" href="style.css"> 
 
 2:General syntax : 
 

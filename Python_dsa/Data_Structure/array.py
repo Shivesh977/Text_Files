@@ -1,3 +1,7 @@
+import maths 
+from collections import deque 
+
+
 marks=[1,2,3,4,5]
 
 
@@ -74,3 +78,13 @@ print(l) # 1,2,3,5,7
 
 b=l
 print(b) #1,2,3,5,7
+
+
+######## Convert no to string and vice-versa 
+n=123
+s=str(n)
+print(s) # '123'
+
+s='123'
+n=int(s)
+print(n)# 123
